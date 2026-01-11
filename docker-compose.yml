@@ -1,4 +1,4 @@
-version: "3"
+version: '3.8'
 
 services:
   postgres:
@@ -6,9 +6,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: property_db
-      POSTGRES_USER: property_user
-      POSTGRES_PASSWORD: property_pass
+      POSTGRES_DB: properties_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
 
   redis:
     image: redis:latest
